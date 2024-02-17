@@ -1,0 +1,45 @@
+.saved-cats {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.saved-cat {
+    margin: 25px 0;
+    max-width: 680px;
+    background-color: var(--overlay);
+
+    & img {
+        max-width: 680px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+& .saved-controls {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    & button {
+        background-color: transparent;
+        border: none;
+        font-size: 3rem;
+    }
+
+    & span {
+        font-size: 3rem;
+    }
+}
+
+.clearAllCats {
+    width: 100%;
+    height: 100px;
+    background-color: var(--overlay);
+    border: none;
+    font-size: 2rem;
+    color: #ccc;
+}
